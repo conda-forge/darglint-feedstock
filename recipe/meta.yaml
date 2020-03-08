@@ -1,19 +1,19 @@
 {% set name = "darglint" %}
-{% set version = "1.1.0" %}
+{% set version = "1.2.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 8511f7e403e4512e6901d067b2a82b66c09f9497651b728023eeb4564bf8c0c1
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 5dccce27e1cf49a9f566f513504c85d26e595e4f086987ffd909f5913bad5ad7
 
 build:
   number: 0
   entry_points:
     - darglint = darglint.driver:main
-  script: "{{ PYTHON }} -m pip install . -vv "
+  script: '{{ PYTHON }} -m pip install . -vv '
   noarch: python
 
 requirements:
@@ -33,16 +33,16 @@ test:
     - darglint --help
 
 about:
-  home: "http://github.com/terrencepreilly/darglint"
-  license: "MIT"
-  license_family: "MIT"
-  license_file: "LICENSE.txt"
-  summary: "A python documentation linter which checks that the docstring description matches the definition."
+  home: http://github.com/terrencepreilly/darglint
+  license: MIT
+  license_family: MIT
+  license_file: LICENSE.txt
+  summary: A python documentation linter which checks that the docstring description matches the definition.
   description: |
     A functional docstring linter which checks whether a docstring's description
     matches the actual function/method implementation. Darglint expects
     docstrings to be formatted using the Google Python Style Guide.
-  dev_url: "http://github.com/terrencepreilly/darglint"
+  dev_url: http://github.com/terrencepreilly/darglint
 
 extra:
   recipe-maintainers:
