@@ -120,4 +120,5 @@ Feedstock Maintainers
 =====================
 
 * [@asford](https://github.com/asford/)
+* [@jcollado](https://github.com/jcollado/)
 
