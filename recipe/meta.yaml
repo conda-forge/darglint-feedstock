@@ -1,5 +1,5 @@
 {% set name = "darglint" %}
-{% set version = "1.4.1" %}
+{% set version = "1.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9147af9e6872e15209f67a70e6c7f16a821e516c0c06495fdb87e60ac0e5865a
+  sha256: 78a136292c35c1163e676a0e468e2e04418d4bf48852924a70df226a7b5f4cdf
 
 build:
   number: 0
