@@ -5,7 +5,7 @@ Home: http://github.com/terrencepreilly/darglint
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A python documentation linter which checks that the docstring description matches the definition.
 
